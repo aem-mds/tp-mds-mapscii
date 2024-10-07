@@ -1,0 +1,18 @@
+git config : connexion de compte au repo
+git init : créer un espace de travail, vide, sur le poste du développeur
+git add/stage : indexation des fichiers (peut être utilisé à l’inverse avec le git ignore)
+git status : permet de savoir où on en est
+git commit : application d’une modification dans le repo local
+git commit –amend : pour modifier un commit (modification de fichier erronée, message de commit pas assez explicite etc)
+git log : permet de lire l’historique de commande
+git diff : liste les commits
+git remote add : équivalent de git add
+git push : pousse les modifications contenu dans le commit
+git pull : récupère les modifications faites à distance
+git branch : permet de se situer sur l’arbre du repo
+git merge : permet de fusionner des modifs d’une branche à une autre (merge request)
+git cherry pick : prendre ponctuellement qu’un seul commit
+git stash : mise en réserve. Consiste à faire des modifications non concluantes mais qu’on souhaite tout de même garder parce qu’elles peuvent être utiles. Elles sont mises en réserve.
+git rebase : équivalent du git merge mais en plus radical (pas forcément conseillé, à utiliser avec parcimonie)
+git tag : permet de rajouter des étiquettes
+git show : visualisation des modifications sur un fichier
