@@ -14,7 +14,9 @@
 
     "@airport_label": "#666",
 
-    "@background": "#FFFFF",
+
+    "@background": "#FFC0CB",
+
 
     "@bridge_link": "#fea",
     "@bridge_major_rail": "#bbb",
@@ -29,10 +31,10 @@
 
     "@building": "#99b",
 
-    "@country_label_1": "#ff0",
-    "@country_label_2": "#ff0",
-    "@country_label_3": "#ff0",
-    "@country_label_4": "#ff0",
+    "@country_label_1": "#ff032f",
+    "@country_label_2": "#ff032f",
+    "@country_label_3": "#ff032f",
+    "@country_label_4": "#ff032f",
 
     "@landuse_cemetery": "#e0e4dd",
     "@landuse_hospital": "#d9b",
@@ -86,11 +88,13 @@
     "@tunnel_trunk_primary": "#fff4c6",
 
     "@water": "#FFC0CB",
-    "@water_label": "#74aee9",
+
+    "@water_label": "#FFC0CB",
 
     "@waterway": "#FFC0CB",
-    "@waterway_river": "#a0c8f0",
-    "@waterway_stream_canal": "#a0c8f0"
+    "@waterway_river": "#FFC0CB",
+    "@waterway_stream_canal": "#FFC0CB"
+
   },
   "layers": [
     {
