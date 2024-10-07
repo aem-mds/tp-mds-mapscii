@@ -1,4 +1,5 @@
 ori est passé par ici
+https://media.licdn.com/dms/image/C5603AQHaXvhO-cLAPA/profile-displayphoto-shrink_200_200/0/1517398682463?e=2147483647&v=beta&t=Wsu9OHN1vaKLZWMx5TqyczM1Z3dEtMfhgKm3n4pAVHg
 
 # MapSCII - The Whole World In Your Console. [![Build Status](https://travis-ci.com/rastapasta/mapscii.svg?branch=master)](https://travis-ci.com/rastapasta/mapscii)
 
@@ -32,6 +33,7 @@ If you're on Windows, use the open source telnet client [PuTTY](https://www.chia
 
 With a modern node installation available, just start it with
 ououoi
+
 ```
 npx mapscii
 ```
