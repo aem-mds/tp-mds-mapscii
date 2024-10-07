@@ -1,3 +1,10 @@
+/*#
+  MapSCII - Terminal Map Viewer
+  by Michael Strassburger <codepoet@cpan.org>
+  Discover the planet in your console!
+  This scripts boots up the application.
+  TODO: params parsing and so on
+#*/
 'use strict';
 const config = require('./src/config');
 const Mapscii = require('./src/Mapscii');
@@ -20,11 +27,11 @@ const argv = require('yargs')
     default: config.initialZoom,
     type: 'number',
   })
-  /*.option('width', {
+  .option('width', {
     alias: 'w',
     description: 'Fixed width of rendering',
     type: 'number',
-  })*/
+  })
   .option('height', {
     alias: 'h',
     description: 'Fixed height of rendering',
