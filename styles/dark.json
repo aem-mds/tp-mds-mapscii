@@ -1,12 +1,12 @@
 {
   "name": "dark",
   "constants": {
-    "@admin_level_2": "#FFC0CB",
-    "@admin_level_2_disputed": "#FFC0CB",
-    "@admin_level_2_maritime": "#FFC0CB",
-    "@admin_level_3": "#FFC0CB",
-    "@admin_level_3_maritime": "#FFC0CB",
-    "@admin_level_4": "#FFC0CB",
+    "@admin_level_2": "#ff00d0",
+    "@admin_level_2_disputed": "#ff00d0",
+    "@admin_level_2_maritime": "#9bf",
+    "@admin_level_3": "#aac",
+    "@admin_level_3_maritime": "#8af",
+    "@admin_level_4": "#777",
 
     "@aeroway_fill": "#f0ede9",
     "@aeroway_runway": "#f0ede9",
@@ -23,8 +23,8 @@
     "@bridge_motorway_link": "#fc8",
     "@bridge_path_pedestrian": "#cba",
     "@bridge_secondary_tertiary": "#fea",
-    "@bridge_service_track": "#fff",
-    "@bridge_street": "#fff",
+    "@bridge_service_track": "#ff00d0",
+    "@bridge_street": "#ff00d0",
     "@bridge_trunk_primary": "#fea",
 
     "@building": "#99b",
@@ -70,8 +70,8 @@
     "@road_motorway_link": "#fc8",
     "@road_path_pedestrian": "#cba",
     "@road_secondary_tertiary": "#fea",
-    "@road_service_track": "#fff",
-    "@road_street": "#fff",
+    "@road_service_track": "#ff00d0",
+    "@road_street": "#ff00d0",
     "@road_trunk_primary": "#fea",
 
     "@tunnel_link": "#fff4c6",
@@ -81,8 +81,8 @@
     "@tunnel_motorway_link": "#fc8",
     "@tunnel_path_pedestrian": "#cba",
     "@tunnel_secondary_tertiary": "#fff4c6",
-    "@tunnel_service_track": "#fff",
-    "@tunnel_street": "#fff",
+    "@tunnel_service_track": "#ff00d0",
+    "@tunnel_street": "#ff00d0",
     "@tunnel_trunk_primary": "#fff4c6",
 
     "@water": "#FFC0CB",

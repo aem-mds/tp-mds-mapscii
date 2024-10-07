@@ -7,16 +7,16 @@
     "@building": "#99b",
     "@housenum_label": "#88a",
 
-    "@country_label_1": "#ff0",
-    "@country_label_2": "#ff0",
-    "@country_label_3": "#ff0",
-    "@country_label_4": "#ff0",
+    "@country_label_1": "#00ff2f",
+    "@country_label_2": "#00ff2f",
+    "@country_label_3": "#00ff2f",
+    "@country_label_4": "#00ff2f",
 
     "@admin_level_2": "#fff",
     "@admin_level_3": "#aac",
     "@admin_level_4": "#777",
 
-    "@poi_label_1": "#ff0",
+    "@poi_label_1": "#00ff2f",
     "@poi_label_2": "#ee0",
     "@poi_label_3": "#cc0",
     "@poi_label_4": "#aa0",
