@@ -57,7 +57,7 @@ In any of the [supported Linux distros](https://snapcraft.io/docs/core/install):
 This is pretty simple too.
 
 ```
-mapscii
+mapscii (ça marche pas)
 ```
 
 ## Keyboard shortcuts
