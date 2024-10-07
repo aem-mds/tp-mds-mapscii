@@ -15,7 +15,7 @@ const bresenham = require('bresenham');
 const earcut = require('earcut');
 const BrailleBuffer = require('./BrailleBuffer');
 
-class Canvas {
+class Portrait {
   constructor(width, height) {
     this.width = width;
     this.height = height;

@@ -7,13 +7,13 @@
 'use strict';
 const x256 = require('x256');
 const simplify = require('simplify-js');
-
-const Canvas = require('./Canvas');
+//😃😃😃😃😃😃😃😃😃😃😃
+const Canvas = require('./Portrait');
 const LabelBuffer = require('./LabelBuffer');
 const Styler = require('./Styler');
 const utils = require('./utils');
 const config = require('./config');
-
+//😃😃😃😃😃😃😃😃😃😃😃
 class Renderer {
   constructor(output, tileSource, style) {
     this.output = output;
@@ -28,7 +28,7 @@ class Renderer {
     this.height = height;
     this.canvas = new Canvas(width, height);
   }
-
+//😃😃😃😃😃😃😃😃😃😃😃
   async draw(center, zoom) {
     if (this.isDrawing) return Promise.reject();
     this.isDrawing = true;
@@ -63,7 +63,7 @@ class Renderer {
       this.lastDrawAt = Date.now();
     }
   }
-
+//😃😃😃😃😃😃😃😃😃😃😃
   _visibleTiles(center, zoom) {
     const z = utils.baseZoom(zoom);
     center = utils.ll2tile(center.lon, center.lat, z);
@@ -101,7 +101,7 @@ class Renderer {
     }
     return tiles;
   }
-
+//😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃
   async _getTile(tile) {
     tile.data = await this.tileSource.getTile(tile.xyz.z, tile.xyz.x, tile.xyz.y);
     return tile;
@@ -131,7 +131,7 @@ class Renderer {
     tile.layers = layers;
     return tile;
   }
-
+//😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃
   _renderTiles(tiles) {
     const labels = [];
     if (tiles.length === 0) return;
@@ -165,7 +165,7 @@ class Renderer {
       this._drawFeature(label.tile, label.feature, label.scale);
     }
   }
-
+//😃😃😃😃😃😃😃😃😃😃😃
   _getFrame() {
     let frame = '';
     if (!this.lastDrawAt) {
@@ -187,7 +187,7 @@ class Renderer {
     } else if (feature.style.maxzoom && tile.zoom > feature.style.maxzoom) {
       return false;
     }
-    
+    //😃😃😃😃😃😃😃😃😃😃😃
     switch (feature.style.type) {
       case 'line': {
         let width = feature.style.paint['line-width'];
@@ -234,7 +234,7 @@ class Renderer {
               break;
             }
           }
-        }
+        }//😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃
         if (placed) {
           this._seen[text] = true;
         }
