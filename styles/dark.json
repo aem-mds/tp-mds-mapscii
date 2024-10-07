@@ -1,12 +1,12 @@
 {
   "name": "dark",
   "constants": {
-    "@admin_level_2": "#ff00d0",
-    "@admin_level_2_disputed": "#ff00d0",
-    "@admin_level_2_maritime": "#9bf",
-    "@admin_level_3": "#aac",
-    "@admin_level_3_maritime": "#8af",
-    "@admin_level_4": "#777",
+    "@admin_level_2": "#FFC0CB",
+    "@admin_level_2_disputed": "#FFC0CB",
+    "@admin_level_2_maritime": "#FFC0CB",
+    "@admin_level_3": "#FFC0CB",
+    "@admin_level_3_maritime": "#FFC0CB",
+    "@admin_level_4": "#FFC0CB",
 
     "@aeroway_fill": "#f0ede9",
     "@aeroway_runway": "#f0ede9",
@@ -25,8 +25,8 @@
     "@bridge_motorway_link": "#fc8",
     "@bridge_path_pedestrian": "#cba",
     "@bridge_secondary_tertiary": "#fea",
-    "@bridge_service_track": "#ff00d0",
-    "@bridge_street": "#ff00d0",
+    "@bridge_service_track": "#fff",
+    "@bridge_street": "#fff",
     "@bridge_trunk_primary": "#fea",
 
     "@building": "#99b",
@@ -72,8 +72,8 @@
     "@road_motorway_link": "#fc8",
     "@road_path_pedestrian": "#cba",
     "@road_secondary_tertiary": "#fea",
-    "@road_service_track": "#ff00d0",
-    "@road_street": "#ff00d0",
+    "@road_service_track": "#fff",
+    "@road_street": "#fff",
     "@road_trunk_primary": "#fea",
 
     "@tunnel_link": "#fff4c6",
@@ -83,8 +83,8 @@
     "@tunnel_motorway_link": "#fc8",
     "@tunnel_path_pedestrian": "#cba",
     "@tunnel_secondary_tertiary": "#fff4c6",
-    "@tunnel_service_track": "#ff00d0",
-    "@tunnel_street": "#ff00d0",
+    "@tunnel_service_track": "#fff",
+    "@tunnel_street": "#fff",
     "@tunnel_trunk_primary": "#fff4c6",
 
     "@water": "#FFC0CB",
@@ -111,11 +111,7 @@
         "fill-color": "@landuse_overlay_national_park"
       },
       "source-layer": "landuse_overlay",
-      "filter": [
-        "==",
-        "class",
-        "national_park"
-      ]
+      "filter": ["==", "class", "national_park"]
     },
     {
       "type": "fill",
@@ -124,11 +120,7 @@
         "fill-color": "@landuse_park"
       },
       "source-layer": "landuse",
-      "filter": [
-        "==",
-        "class",
-        "park"
-      ]
+      "filter": ["==", "class", "park"]
     },
     {
       "type": "line",
@@ -137,11 +129,7 @@
         "fill-color": "@landuse_cemetery"
       },
       "source-layer": "landuse",
-      "filter": [
-        "==",
-        "class",
-        "cemetery"
-      ]
+      "filter": ["==", "class", "cemetery"]
     },
     {
       "type": "line",
@@ -150,11 +138,7 @@
         "line-color": "@landuse_hospital"
       },
       "source-layer": "landuse",
-      "filter": [
-        "==",
-        "class",
-        "hospital"
-      ]
+      "filter": ["==", "class", "hospital"]
     },
     {
       "type": "line",
@@ -163,11 +147,7 @@
         "line-color": "@landuse_school"
       },
       "source-layer": "landuse",
-      "filter": [
-        "==",
-        "class",
-        "school"
-      ]
+      "filter": ["==", "class", "school"]
     },
     {
       "type": "line",
@@ -176,11 +156,7 @@
         "line-color": "@landuse_wood"
       },
       "source-layer": "landuse",
-      "filter": [
-        "==",
-        "class",
-        "wood"
-      ]
+      "filter": ["==", "class", "wood"]
     },
     {
       "type": "line",
@@ -191,21 +167,9 @@
       "source-layer": "waterway",
       "filter": [
         "all",
-        [
-          "!=",
-          "class",
-          "river"
-        ],
-        [
-          "!=",
-          "class",
-          "stream"
-        ],
-        [
-          "!=",
-          "class",
-          "canal"
-        ]
+        ["!=", "class", "river"],
+        ["!=", "class", "stream"],
+        ["!=", "class", "canal"]
       ]
     },
     {
@@ -215,11 +179,7 @@
         "line-color": "@waterway_river"
       },
       "source-layer": "waterway",
-      "filter": [
-        "==",
-        "class",
-        "river"
-      ]
+      "filter": ["==", "class", "river"]
     },
     {
       "type": "line",
@@ -228,12 +188,7 @@
         "line-color": "@waterway_stream_canal"
       },
       "source-layer": "waterway",
-      "filter": [
-        "in",
-        "class",
-        "stream",
-        "canal"
-      ]
+      "filter": ["in", "class", "stream", "canal"]
     },
     {
       "type": "fill",
@@ -250,11 +205,7 @@
         "fill-color": "@aeroway_fill"
       },
       "source-layer": "aeroway",
-      "filter": [
-        "==",
-        "$type",
-        "Polygon"
-      ],
+      "filter": ["==", "$type", "Polygon"],
       "minzoom": 11
     },
     {
@@ -264,19 +215,7 @@
         "line-color": "@aeroway_runway"
       },
       "source-layer": "aeroway",
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "LineString"
-        ],
-        [
-          "==",
-          "type",
-          "runway"
-        ]
-      ],
+      "filter": ["all", ["==", "$type", "LineString"], ["==", "type", "runway"]],
       "minzoom": 11
     },
     {
@@ -286,19 +225,7 @@
         "line-color": "@aeroway_taxiway"
       },
       "source-layer": "aeroway",
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "LineString"
-        ],
-        [
-          "==",
-          "type",
-          "taxiway"
-        ]
-      ],
+      "filter": ["all", ["==", "$type", "LineString"], ["==", "type", "taxiway"]],
       "minzoom": 11
     },
     {
@@ -318,25 +245,8 @@
       "source-layer": "road",
       "filter": [
         "all",
-        [
-          "==",
-          "$type",
-          "LineString"
-        ],
-        [
-          "all",
-          [
-            "==",
-            "structure",
-            "tunnel"
-          ],
-          [
-            "in",
-            "class",
-            "path",
-            "pedestrian"
-          ]
-        ]
+        ["==", "$type", "LineString"],
+        ["all", ["==", "structure", "tunnel"], ["in", "class", "path", "pedestrian"]]
       ]
     },
     {
@@ -346,19 +256,7 @@
         "line-color": "@tunnel_motorway_link"
       },
       "source-layer": "road",
-      "filter": [
-        "all",
-        [
-          "==",
-          "structure",
-          "tunnel"
-        ],
-        [
-          "==",
-          "class",
-          "motorway_link"
-        ]
-      ]
+      "filter": ["all", ["==", "structure", "tunnel"], ["==", "class", "motorway_link"]]
     },
     {
       "type": "line",
@@ -367,20 +265,7 @@
         "line-color": "@tunnel_service_track"
       },
       "source-layer": "road",
-      "filter": [
-        "all",
-        [
-          "==",
-          "structure",
-          "tunnel"
-        ],
-        [
-          "in",
-          "class",
-          "service",
-          "track"
-        ]
-      ]
+      "filter": ["all", ["==", "structure", "tunnel"], ["in", "class", "service", "track"]]
     },
     {
       "type": "line",
@@ -389,19 +274,7 @@
         "line-color": "@tunnel_link"
       },
       "source-layer": "road",
-      "filter": [
-        "all",
-        [
-          "==",
-          "structure",
-          "tunnel"
-        ],
-        [
-          "==",
-          "class",
-          "link"
-        ]
-      ]
+      "filter": ["all", ["==", "structure", "tunnel"], ["==", "class", "link"]]
     },
     {
       "type": "line",
@@ -410,20 +283,7 @@
         "line-color": "@tunnel_street"
       },
       "source-layer": "road",
-      "filter": [
-        "all",
-        [
-          "==",
-          "structure",
-          "tunnel"
-        ],
-        [
-          "in",
-          "class",
-          "street",
-          "street_limited"
-        ]
-      ]
+      "filter": ["all", ["==", "structure", "tunnel"], ["in", "class", "street", "street_limited"]]
     },
     {
       "type": "line",
@@ -432,20 +292,7 @@
         "line-color": "@tunnel_secondary_tertiary"
       },
       "source-layer": "road",
-      "filter": [
-        "all",
-        [
-          "==",
-          "structure",
-          "tunnel"
-        ],
-        [
-          "in",
-          "class",
-          "secondary",
-          "tertiary"
-        ]
-      ]
+      "filter": ["all", ["==", "structure", "tunnel"], ["in", "class", "secondary", "tertiary"]]
     },
     {
       "type": "line",
@@ -454,20 +301,7 @@
         "line-color": "@tunnel_trunk_primary"
       },
       "source-layer": "road",
-      "filter": [
-        "all",
-        [
-          "==",
-          "structure",
-          "tunnel"
-        ],
-        [
-          "in",
-          "class",
-          "trunk",
-          "primary"
-        ]
-      ]
+      "filter": ["all", ["==", "structure", "tunnel"], ["in", "class", "trunk", "primary"]]
     },
     {
       "type": "line",
@@ -476,19 +310,7 @@
         "line-color": "@tunnel_motorway"
       },
       "source-layer": "road",
-      "filter": [
-        "all",
-        [
-          "==",
-          "structure",
-          "tunnel"
-        ],
-        [
-          "==",
-          "class",
-          "motorway"
-        ]
-      ]
+      "filter": ["all", ["==", "structure", "tunnel"], ["==", "class", "motorway"]]
     },
     {
       "type": "line",
@@ -497,20 +319,7 @@
         "line-color": "@tunnel_major_rail"
       },
       "source-layer": "road",
-      "filter": [
-        "all",
-        [
-          "==",
-          "structure",
-          "tunnel"
-        ],
-        [
-          "in",
-          "class",
-          "major_rail",
-          "minor_rail"
-        ]
-      ]
+      "filter": ["all", ["==", "structure", "tunnel"], ["in", "class", "major_rail", "minor_rail"]]
     },
     {
       "type": "line",
@@ -519,20 +328,7 @@
         "line-color": "@tunnel_major_rail_hatching"
       },
       "source-layer": "road",
-      "filter": [
-        "all",
-        [
-          "==",
-          "structure",
-          "tunnel"
-        ],
-        [
-          "in",
-          "class",
-          "major_rail",
-          "minor_rail"
-        ]
-      ]
+      "filter": ["all", ["==", "structure", "tunnel"], ["in", "class", "major_rail", "minor_rail"]]
     },
     {
       "type": "line",
@@ -543,26 +339,8 @@
       "source-layer": "road",
       "filter": [
         "all",
-        [
-          "==",
-          "$type",
-          "LineString"
-        ],
-        [
-          "all",
-          [
-            "in",
-            "class",
-            "path",
-            "pedestrian"
-          ],
-          [
-            "!in",
-            "structure",
-            "bridge",
-            "tunnel"
-          ]
-        ]
+        ["==", "$type", "LineString"],
+        ["all", ["in", "class", "path", "pedestrian"], ["!in", "structure", "bridge", "tunnel"]]
       ]
     },
     {
@@ -573,20 +351,7 @@
       },
       "source-layer": "road",
       "minzoom": 12,
-      "filter": [
-        "all",
-        [
-          "==",
-          "class",
-          "motorway_link"
-        ],
-        [
-          "!in",
-          "structure",
-          "bridge",
-          "tunnel"
-        ]
-      ]
+      "filter": ["all", ["==", "class", "motorway_link"], ["!in", "structure", "bridge", "tunnel"]]
     },
     {
       "type": "line",
@@ -597,18 +362,8 @@
       "source-layer": "road",
       "filter": [
         "all",
-        [
-          "in",
-          "class",
-          "service",
-          "track"
-        ],
-        [
-          "!in",
-          "structure",
-          "bridge",
-          "tunnel"
-        ]
+        ["in", "class", "service", "track"],
+        ["!in", "structure", "bridge", "tunnel"]
       ]
     },
     {
@@ -619,20 +374,7 @@
       },
       "source-layer": "road",
       "minzoom": 13,
-      "filter": [
-        "all",
-        [
-          "==",
-          "class",
-          "link"
-        ],
-        [
-          "!in",
-          "structure",
-          "bridge",
-          "tunnel"
-        ]
-      ]
+      "filter": ["all", ["==", "class", "link"], ["!in", "structure", "bridge", "tunnel"]]
     },
     {
       "type": "line",
@@ -643,25 +385,11 @@
       "source-layer": "road",
       "filter": [
         "all",
-        [
-          "==",
-          "$type",
-          "LineString"
-        ],
+        ["==", "$type", "LineString"],
         [
           "all",
-          [
-            "in",
-            "class",
-            "street",
-            "street_limited"
-          ],
-          [
-            "!in",
-            "structure",
-            "bridge",
-            "tunnel"
-          ]
+          ["in", "class", "street", "street_limited"],
+          ["!in", "structure", "bridge", "tunnel"]
         ]
       ]
     },
@@ -674,18 +402,8 @@
       "source-layer": "road",
       "filter": [
         "all",
-        [
-          "in",
-          "class",
-          "secondary",
-          "tertiary"
-        ],
-        [
-          "!in",
-          "structure",
-          "bridge",
-          "tunnel"
-        ]
+        ["in", "class", "secondary", "tertiary"],
+        ["!in", "structure", "bridge", "tunnel"]
       ]
     },
     {
@@ -697,18 +415,8 @@
       "source-layer": "road",
       "filter": [
         "all",
-        [
-          "in",
-          "class",
-          "trunk",
-          "primary"
-        ],
-        [
-          "!in",
-          "structure",
-          "bridge",
-          "tunnel"
-        ]
+        ["in", "class", "trunk", "primary"],
+        ["!in", "structure", "bridge", "tunnel"]
       ]
     },
     {
@@ -719,20 +427,7 @@
       },
       "source-layer": "road",
       "minzoom": 5,
-      "filter": [
-        "all",
-        [
-          "==",
-          "class",
-          "motorway"
-        ],
-        [
-          "!in",
-          "structure",
-          "bridge",
-          "tunnel"
-        ]
-      ]
+      "filter": ["all", ["==", "class", "motorway"], ["!in", "structure", "bridge", "tunnel"]]
     },
     {
       "type": "line",
@@ -741,20 +436,7 @@
         "line-color": "@road_major_rail"
       },
       "source-layer": "road",
-      "filter": [
-        "all",
-        [
-          "==",
-          "class",
-          "major_rail"
-        ],
-        [
-          "!in",
-          "structure",
-          "bridge",
-          "tunnel"
-        ]
-      ]
+      "filter": ["all", ["==", "class", "major_rail"], ["!in", "structure", "bridge", "tunnel"]]
     },
     {
       "type": "line",
@@ -763,20 +445,7 @@
         "line-color": "@road_major_rail_hatching"
       },
       "source-layer": "road",
-      "filter": [
-        "all",
-        [
-          "==",
-          "class",
-          "major_rail"
-        ],
-        [
-          "!in",
-          "structure",
-          "bridge",
-          "tunnel"
-        ]
-      ]
+      "filter": ["all", ["==", "class", "major_rail"], ["!in", "structure", "bridge", "tunnel"]]
     },
     {
       "type": "line",
@@ -787,25 +456,8 @@
       "source-layer": "road",
       "filter": [
         "all",
-        [
-          "==",
-          "$type",
-          "LineString"
-        ],
-        [
-          "all",
-          [
-            "==",
-            "structure",
-            "bridge"
-          ],
-          [
-            "in",
-            "class",
-            "path",
-            "pedestrian"
-          ]
-        ]
+        ["==", "$type", "LineString"],
+        ["all", ["==", "structure", "bridge"], ["in", "class", "path", "pedestrian"]]
       ]
     },
     {
@@ -815,19 +467,7 @@
         "line-color": "@bridge_motorway_link"
       },
       "source-layer": "road",
-      "filter": [
-        "all",
-        [
-          "==",
-          "structure",
-          "bridge"
-        ],
-        [
-          "==",
-          "class",
-          "motorway_link"
-        ]
-      ]
+      "filter": ["all", ["==", "structure", "bridge"], ["==", "class", "motorway_link"]]
     },
     {
       "type": "line",
@@ -836,20 +476,7 @@
         "line-color": "@bridge_service_track"
       },
       "source-layer": "road",
-      "filter": [
-        "all",
-        [
-          "==",
-          "structure",
-          "bridge"
-        ],
-        [
-          "in",
-          "class",
-          "service",
-          "track"
-        ]
-      ]
+      "filter": ["all", ["==", "structure", "bridge"], ["in", "class", "service", "track"]]
     },
     {
       "type": "line",
@@ -858,19 +485,7 @@
         "line-color": "@bridge_link"
       },
       "source-layer": "road",
-      "filter": [
-        "all",
-        [
-          "==",
-          "structure",
-          "bridge"
-        ],
-        [
-          "==",
-          "class",
-          "link"
-        ]
-      ]
+      "filter": ["all", ["==", "structure", "bridge"], ["==", "class", "link"]]
     },
     {
       "type": "line",
@@ -879,20 +494,7 @@
         "line-color": "@bridge_street"
       },
       "source-layer": "road",
-      "filter": [
-        "all",
-        [
-          "==",
-          "structure",
-          "bridge"
-        ],
-        [
-          "in",
-          "class",
-          "street",
-          "street_limited"
-        ]
-      ]
+      "filter": ["all", ["==", "structure", "bridge"], ["in", "class", "street", "street_limited"]]
     },
     {
       "type": "line",
@@ -901,20 +503,7 @@
         "line-color": "@bridge_secondary_tertiary"
       },
       "source-layer": "road",
-      "filter": [
-        "all",
-        [
-          "==",
-          "structure",
-          "bridge"
-        ],
-        [
-          "in",
-          "class",
-          "secondary",
-          "tertiary"
-        ]
-      ]
+      "filter": ["all", ["==", "structure", "bridge"], ["in", "class", "secondary", "tertiary"]]
     },
     {
       "type": "line",
@@ -923,20 +512,7 @@
         "line-color": "@bridge_trunk_primary"
       },
       "source-layer": "road",
-      "filter": [
-        "all",
-        [
-          "==",
-          "structure",
-          "bridge"
-        ],
-        [
-          "in",
-          "class",
-          "trunk",
-          "primary"
-        ]
-      ]
+      "filter": ["all", ["==", "structure", "bridge"], ["in", "class", "trunk", "primary"]]
     },
     {
       "type": "line",
@@ -945,19 +521,7 @@
         "line-color": "@bridge_motorway"
       },
       "source-layer": "road",
-      "filter": [
-        "all",
-        [
-          "==",
-          "structure",
-          "bridge"
-        ],
-        [
-          "==",
-          "class",
-          "motorway"
-        ]
-      ]
+      "filter": ["all", ["==", "structure", "bridge"], ["==", "class", "motorway"]]
     },
     {
       "type": "line",
@@ -966,19 +530,7 @@
         "line-color": "@bridge_major_rail"
       },
       "source-layer": "road",
-      "filter": [
-        "all",
-        [
-          "==",
-          "structure",
-          "bridge"
-        ],
-        [
-          "==",
-          "class",
-          "major_rail"
-        ]
-      ]
+      "filter": ["all", ["==", "structure", "bridge"], ["==", "class", "major_rail"]]
     },
     {
       "type": "line",
@@ -987,19 +539,7 @@
         "line-color": "@bridge_major_rail_hatching"
       },
       "source-layer": "road",
-      "filter": [
-        "all",
-        [
-          "==",
-          "structure",
-          "bridge"
-        ],
-        [
-          "==",
-          "class",
-          "major_rail"
-        ]
-      ]
+      "filter": ["all", ["==", "structure", "bridge"], ["==", "class", "major_rail"]]
     },
     {
       "type": "line",
@@ -1008,19 +548,7 @@
         "line-color": "@admin_level_3"
       },
       "source-layer": "admin",
-      "filter": [
-        "all",
-        [
-          ">=",
-          "admin_level",
-          4
-        ],
-        [
-          "==",
-          "maritime",
-          0
-        ]
-      ]
+      "filter": ["all", [">=", "admin_level", 4], ["==", "maritime", 0]]
     },
     {
       "type": "line",
@@ -1029,19 +557,7 @@
         "line-color": "@admin_level_3"
       },
       "source-layer": "admin",
-      "filter": [
-        "all",
-        [
-          "==",
-          "admin_level",
-          3
-        ],
-        [
-          "==",
-          "maritime",
-          0
-        ]
-      ]
+      "filter": ["all", ["==", "admin_level", 3], ["==", "maritime", 0]]
     },
     {
       "type": "line",
@@ -1050,24 +566,7 @@
         "line-color": "@admin_level_2"
       },
       "source-layer": "admin",
-      "filter": [
-        "all",
-        [
-          "==",
-          "admin_level",
-          2
-        ],
-        [
-          "==",
-          "disputed",
-          0
-        ],
-        [
-          "==",
-          "maritime",
-          0
-        ]
-      ]
+      "filter": ["all", ["==", "admin_level", 2], ["==", "disputed", 0], ["==", "maritime", 0]]
     },
     {
       "type": "line",
@@ -1076,24 +575,7 @@
         "line-color": "@admin_level_2_disputed"
       },
       "source-layer": "admin",
-      "filter": [
-        "all",
-        [
-          "==",
-          "admin_level",
-          2
-        ],
-        [
-          "==",
-          "disputed",
-          1
-        ],
-        [
-          "==",
-          "maritime",
-          0
-        ]
-      ]
+      "filter": ["all", ["==", "admin_level", 2], ["==", "disputed", 1], ["==", "maritime", 0]]
     },
     {
       "type": "line",
@@ -1102,19 +584,7 @@
         "line-color": "@admin_level_3_maritime"
       },
       "source-layer": "admin",
-      "filter": [
-        "all",
-        [
-          ">=",
-          "admin_level",
-          3
-        ],
-        [
-          "==",
-          "maritime",
-          1
-        ]
-      ]
+      "filter": ["all", [">=", "admin_level", 3], ["==", "maritime", 1]]
     },
     {
       "type": "line",
@@ -1123,19 +593,7 @@
         "line-color": "@admin_level_2_maritime"
       },
       "source-layer": "admin",
-      "filter": [
-        "all",
-        [
-          "==",
-          "admin_level",
-          2
-        ],
-        [
-          "==",
-          "maritime",
-          1
-        ]
-      ]
+      "filter": ["all", ["==", "admin_level", 2], ["==", "maritime", 1]]
     },
     {
       "type": "symbol",
@@ -1144,11 +602,7 @@
         "text-color": "@water_label"
       },
       "source-layer": "water_label",
-      "filter": [
-        "==",
-        "$type",
-        "Point"
-      ]
+      "filter": ["==", "$type", "Point"]
     },
     {
       "type": "symbol",
@@ -1157,19 +611,7 @@
         "text-color": "@poi_label_4"
       },
       "source-layer": "poi_label",
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "Point"
-        ],
-        [
-          "==",
-          "scalerank",
-          4
-        ]
-      ],
+      "filter": ["all", ["==", "$type", "Point"], ["==", "scalerank", 4]],
       "minzoom": 16
     },
     {
@@ -1179,19 +621,7 @@
         "text-color": "@poi_label_3"
       },
       "source-layer": "poi_label",
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "Point"
-        ],
-        [
-          "==",
-          "scalerank",
-          3
-        ]
-      ],
+      "filter": ["all", ["==", "$type", "Point"], ["==", "scalerank", 3]],
       "minzoom": 15
     },
     {
@@ -1201,19 +631,7 @@
         "text-color": "@poi_label_2"
       },
       "source-layer": "poi_label",
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "Point"
-        ],
-        [
-          "==",
-          "scalerank",
-          2
-        ]
-      ],
+      "filter": ["all", ["==", "$type", "Point"], ["==", "scalerank", 2]],
       "minzoom": 14
     },
     {
@@ -1231,19 +649,7 @@
         "text-color": "@poi_label_1"
       },
       "source-layer": "poi_label",
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "Point"
-        ],
-        [
-          "==",
-          "scalerank",
-          1
-        ]
-      ],
+      "filter": ["all", ["==", "$type", "Point"], ["==", "scalerank", 1]],
       "minzoom": 13
     },
     {
@@ -1253,21 +659,7 @@
         "text-color": "@airport_label"
       },
       "source-layer": "airport_label",
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "Point"
-        ],
-        [
-          "in",
-          "scalerank",
-          1,
-          2,
-          3
-        ]
-      ],
+      "filter": ["all", ["==", "$type", "Point"], ["in", "scalerank", 1, 2, 3]],
       "minzoom": 11
     },
     {
@@ -1277,11 +669,7 @@
         "text-color": "@road_label"
       },
       "source-layer": "road_label",
-      "filter": [
-        "!=",
-        "class",
-        "ferry"
-      ],
+      "filter": ["!=", "class", "ferry"],
       "minzoom": 15.5
     },
     {
@@ -1291,15 +679,7 @@
         "text-color": "@place_label_other"
       },
       "source-layer": "place_label",
-      "filter": [
-        "in",
-        "type",
-        "hamlet",
-        "suburb",
-        "neighbourhood",
-        "island",
-        "islet"
-      ]
+      "filter": ["in", "type", "hamlet", "suburb", "neighbourhood", "island", "islet"]
     },
     {
       "type": "symbol",
@@ -1308,11 +688,7 @@
         "text-color": "@place_label_village"
       },
       "source-layer": "place_label",
-      "filter": [
-        "==",
-        "type",
-        "village"
-      ]
+      "filter": ["==", "type", "village"]
     },
     {
       "type": "symbol",
@@ -1321,11 +697,7 @@
         "text-color": "@place_label_town"
       },
       "source-layer": "place_label",
-      "filter": [
-        "==",
-        "type",
-        "town"
-      ]
+      "filter": ["==", "type", "town"]
     },
     {
       "type": "symbol",
@@ -1334,11 +706,7 @@
         "text-color": "@place_label_city"
       },
       "source-layer": "place_label",
-      "filter": [
-        "==",
-        "type",
-        "city"
-      ]
+      "filter": ["==", "type", "city"]
     },
     {
       "type": "symbol",
@@ -1347,19 +715,7 @@
         "text-color": "@marine_label_line_4"
       },
       "source-layer": "marine_label",
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "LineString"
-        ],
-        [
-          ">=",
-          "labelrank",
-          4
-        ]
-      ]
+      "filter": ["all", ["==", "$type", "LineString"], [">=", "labelrank", 4]]
     },
     {
       "type": "symbol",
@@ -1368,19 +724,7 @@
         "text-color": "@marine_label_4"
       },
       "source-layer": "marine_label",
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "Point"
-        ],
-        [
-          ">=",
-          "labelrank",
-          4
-        ]
-      ]
+      "filter": ["all", ["==", "$type", "Point"], [">=", "labelrank", 4]]
     },
     {
       "type": "symbol",
@@ -1389,19 +733,7 @@
         "text-color": "@marine_label_line_3"
       },
       "source-layer": "marine_label",
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "LineString"
-        ],
-        [
-          "==",
-          "labelrank",
-          3
-        ]
-      ]
+      "filter": ["all", ["==", "$type", "LineString"], ["==", "labelrank", 3]]
     },
     {
       "type": "symbol",
@@ -1410,19 +742,7 @@
         "text-color": "@marine_label_point_3"
       },
       "source-layer": "marine_label",
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "Point"
-        ],
-        [
-          "==",
-          "labelrank",
-          3
-        ]
-      ]
+      "filter": ["all", ["==", "$type", "Point"], ["==", "labelrank", 3]]
     },
     {
       "type": "symbol",
@@ -1431,19 +751,7 @@
         "text-color": "@marine_label_line_2"
       },
       "source-layer": "marine_label",
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "LineString"
-        ],
-        [
-          "==",
-          "labelrank",
-          2
-        ]
-      ]
+      "filter": ["all", ["==", "$type", "LineString"], ["==", "labelrank", 2]]
     },
     {
       "type": "symbol",
@@ -1452,19 +760,7 @@
         "text-color": "@marine_label_point_2"
       },
       "source-layer": "marine_label",
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "Point"
-        ],
-        [
-          "==",
-          "labelrank",
-          2
-        ]
-      ]
+      "filter": ["all", ["==", "$type", "Point"], ["==", "labelrank", 2]]
     },
     {
       "type": "symbol",
@@ -1473,19 +769,7 @@
         "text-color": "@marine_label_line_1"
       },
       "source-layer": "marine_label",
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "LineString"
-        ],
-        [
-          "==",
-          "labelrank",
-          1
-        ]
-      ]
+      "filter": ["all", ["==", "$type", "LineString"], ["==", "labelrank", 1]]
     },
     {
       "type": "symbol",
@@ -1494,19 +778,7 @@
         "text-color": "@marine_label_point_1"
       },
       "source-layer": "marine_label",
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "Point"
-        ],
-        [
-          "==",
-          "labelrank",
-          1
-        ]
-      ]
+      "filter": ["all", ["==", "$type", "Point"], ["==", "labelrank", 1]]
     },
     {
       "type": "symbol",
@@ -1515,11 +787,7 @@
         "text-color": "@country_label_4"
       },
       "source-layer": "country_label",
-      "filter": [
-        ">=",
-        "scalerank",
-        4
-      ]
+      "filter": [">=", "scalerank", 4]
     },
     {
       "type": "symbol",
@@ -1528,11 +796,7 @@
         "text-color": "@country_label_3"
       },
       "source-layer": "country_label",
-      "filter": [
-        "==",
-        "scalerank",
-        3
-      ]
+      "filter": ["==", "scalerank", 3]
     },
     {
       "type": "symbol",
@@ -1541,11 +805,7 @@
         "text-color": "@country_label_2"
       },
       "source-layer": "country_label",
-      "filter": [
-        "==",
-        "scalerank",
-        2
-      ]
+      "filter": ["==", "scalerank", 2]
     },
     {
       "type": "symbol",
@@ -1554,11 +814,7 @@
         "text-color": "@country_label_1"
       },
       "source-layer": "country_label",
-      "filter": [
-        "==",
-        "scalerank",
-        1
-      ]
+      "filter": ["==", "scalerank", 1]
     }
   ]
 }

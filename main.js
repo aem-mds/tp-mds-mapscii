@@ -7,63 +7,58 @@
 
   TODO: params parsing and so on
 #*/
-'use strict';
-const Mapscii = require('./src/Mapscii');
-const argv = require('yargs')
-  .option('latitude', {
-    alias: 'lat',
-    description: 'Latitude of initial centre',
+
+develop
     default: config.initialLat,
-    type: 'number',
+    type: "number",
   })
-  .option('longitude', {
-    alias: 'lon',
-    description: 'Longitude of initial centre',
+  .option("longitude", {
+    alias: "lon",
+    description: "Longitude of initial centre",
     default: config.initialLon,
-    type: 'number',
+    type: "number",
   })
-  .option('zoom', {
-    alias: 'z',
-    description: 'Initial zoom',
+  .option("zoom", {
+    alias: "z",
+    description: "Initial zoom",
     default: config.initialZoom,
-    type: 'number',
+    type: "number",
   })
-  .option('width', {
-    alias: 'w',
-    description: 'Fixed width of rendering',
-    type: 'number',
+  .option("width", {
+    alias: "w",
+    description: "Fixed width of rendering",
+    type: "number",
   })
-  .option('height', {
-    alias: 'h',
-    description: 'Fixed height of rendering',
-    type: 'number',
+  .option("height", {
+    alias: "h",
+    description: "Fixed height of rendering",
+    type: "number",
   })
-  .option('braille', {
-    alias: 'b',
-    description: 'Activate braille rendering',
+  .option("braille", {
+    alias: "b",
+    description: "Activate braille rendering",
     default: config.useBraille,
-    type: 'boolean',
+    type: "boolean",
   })
-  .option('headless', {
-    alias: 'H',
-    description: 'Activate headless mode',
+  .option("headless", {
+    alias: "H",
+    description: "Activate headless mode",
     default: config.headless,
-    type: 'boolean',
+    type: "boolean",
   })
-  .option('tile_source', {
-    alias: 'tileSource',
-    description: 'URL or path to osm2vectortiles source',
+  .option("tile_source", {
+    alias: "tileSource",
+    description: "URL or path to osm2vectortiles source",
     default: config.source,
-    type: 'string',
+    type: "string",
   })
-  .option('style_file', {
-    alias: 'style',
-    description: 'path to json style file',
+  .option("style_file", {
+    alias: "style",
+    description: "path to json style file",
     default: config.styleFile,
-    type: 'string',
+    type: "string",
   })
-  .strict()
-  .argv;
+  .strict().argv;
 
 const options = {
   initialLat: argv.latitude,
@@ -71,7 +66,7 @@ const options = {
   initialZoom: argv.zoom,
   size: {
     width: argv.width,
-    height: argv.height
+    height: argv.height,
   },
   useBraille: argv.braille,
   headless: argv.headless,
@@ -81,6 +76,7 @@ const options = {
 
 const mapscii = new Mapscii(options);
 mapscii.init().catch((err) => {
-  console.error('Failed to start MapSCII.');
+  console.error("Failed to start MapSCII.");
   console.error(err);
 });
+// COUCOU TODO : changer ce fichier
