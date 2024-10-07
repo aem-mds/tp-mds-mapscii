@@ -1,8 +1,8 @@
 {
   "name": "Bright",
   "constants": {
-    "@background": "#000",
-    "@water": "#5f87ff",
+    "@background": "#FFC0CB",
+    "@water": "#FFC0CB",
 
     "@building": "#99b",
     "@housenum_label": "#88a",
