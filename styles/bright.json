@@ -7,24 +7,24 @@
     "@building": "#99b",
     "@housenum_label": "#88a",
 
-    "@country_label_1": "#ff0",
-    "@country_label_2": "#ff0",
-    "@country_label_3": "#ff0",
-    "@country_label_4": "#ff0",
+    "@country_label_1": "#000",
+    "@country_label_2": "#000",
+    "@country_label_3": "#000",
+    "@country_label_4": "#000",
 
-    "@admin_level_2": "#fff",
-    "@admin_level_3": "#aac",
-    "@admin_level_4": "#777",
+    "@admin_level_2": "#59ff00",
+    "@admin_level_3": "#59ff00",
+    "@admin_level_4": "#59ff00",
 
-    "@poi_label_1": "#ff0",
-    "@poi_label_2": "#ee0",
-    "@poi_label_3": "#cc0",
-    "@poi_label_4": "#aa0",
+    "@poi_label_1": "#59ff00",
+    "@poi_label_2": "#59ff00",
+    "@poi_label_3": "#59ff00",
+    "@poi_label_4": "#59ff00",
 
-    "@place_label_city": "#f00",
-    "@place_label_town": "#d33",
-    "@place_label_village": "#c33",
-    "@place_label_other": "#b33"
+    "@place_label_city": "#59ff00",
+    "@place_label_town": "#59ff00",
+    "@place_label_village": "#59ff00",
+    "@place_label_other": "#59ff00"
   },
   "layers": [
     {
