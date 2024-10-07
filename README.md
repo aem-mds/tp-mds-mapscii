@@ -5,6 +5,8 @@ https://media.licdn.com/dms/image/C5603AQHaXvhO-cLAPA/profile-displayphoto-shrin
 
 A node.js based [Vector Tile](http://wiki.openstreetmap.org/wiki/Vector_tiles) to [Braille](http://www.fileformat.info/info/unicode/block/braille_patterns/utf8test.htm) and [ASCII](https://de.wikipedia.org/wiki/American_Standard_Code_for_Information_Interchange) renderer for [xterm](https://en.wikipedia.org/wiki/Xterm)-compatible terminals.
 
+<img href="https://ih1.redbubble.net/image.5194713243.7881/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg" target="_blank">![asciicast](https://ih1.redbubble.net/image.5194713243.7881/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg)</img>
+
 <a href="https://asciinema.org/a/117813?autoplay=1" target="_blank">![asciicast](https://cloud.githubusercontent.com/assets/1259904/25480718/497a64e2-2b4a-11e7-9cf0-ed52ee0b89c0.png)</a>
 
 ## Try it out!
