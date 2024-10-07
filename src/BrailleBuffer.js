@@ -15,7 +15,7 @@
 const stringWidth = require('string-width');
 const config = require('./config');
 const utils = require('./utils');
-
+//😃😃😃😃😃😃😃😃😃😃😃😃😃😃
 const asciiMap = {
   // '▬': [2+32, 4+64],
   // '¯': [1+16],
@@ -28,7 +28,7 @@ const asciiMap = {
   '█': [255],
 };
 const termReset = '\x1B[39;49m';
-
+//😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃
 class BrailleBuffer {
   constructor(width, height) {
     this.brailleMap = [[0x1, 0x8], [0x2, 0x10], [0x4, 0x20], [0x40, 0x80]];
@@ -84,7 +84,7 @@ class BrailleBuffer {
       this.pixelBuffer[idx] &= ~mask;
     });
   }
-
+//😃😃😃😃😃😃😃😃😃😃😃
   _project(x, y) {
     return (x >> 1) + (this.width >> 1) * (y >> 2);
   }
@@ -112,7 +112,7 @@ class BrailleBuffer {
         });
       }
     }
-
+//😃😃😃😃😃😃😃😃😃😃😃
     //TODO Optimize this part
     var i, k;
     const results = [];
@@ -145,7 +145,7 @@ class BrailleBuffer {
       return termReset;
     }
   }
-
+//😃😃😃😃😃😃😃😃😃😃😃
   frame() {
     const output = [];
     let currentColor = null;
@@ -189,7 +189,7 @@ class BrailleBuffer {
     output.push(termReset + config.delimeter);
     return output.join('');
   }
-
+//😃😃😃😃😃😃😃😃😃😃😃
   setChar(char, x, y, color) {
     if (0 <= x && x < this.width && 0 <= y && y < this.height) {
       const idx = this._project(x, y);
@@ -207,5 +207,5 @@ class BrailleBuffer {
     }
   }
 }
-
+//😃😃😃😃😃😃😃😃😃😃😃
 module.exports = BrailleBuffer;

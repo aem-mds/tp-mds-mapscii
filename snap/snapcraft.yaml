@@ -17,3 +17,9 @@ parts:
   mapscii:
     source: .
     plugin: nodejs
+
+# Nutty citation 
+# "Better to cum in the sink than to sink in the cum
+#    -Sun Tzu
+# Friends are like snowflakes, they disappear when you piss on them
+#    -Paulus Lawrencio"
