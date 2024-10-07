@@ -1,12 +1,12 @@
 {
   "name": "dark",
   "constants": {
-    "@admin_level_2": "#fff",
-    "@admin_level_2_disputed": "#fff",
-    "@admin_level_2_maritime": "#9bf",
-    "@admin_level_3": "#aac",
-    "@admin_level_3_maritime": "#8af",
-    "@admin_level_4": "#777",
+    "@admin_level_2": "#FFC0CB",
+    "@admin_level_2_disputed": "#FFC0CB",
+    "@admin_level_2_maritime": "#FFC0CB",
+    "@admin_level_3": "#FFC0CB",
+    "@admin_level_3_maritime": "#FFC0CB",
+    "@admin_level_4": "#FFC0CB",
 
     "@aeroway_fill": "#f0ede9",
     "@aeroway_runway": "#f0ede9",
@@ -14,7 +14,7 @@
 
     "@airport_label": "#666",
 
-    "@background": "#000",
+    "@background": "#FFC0CB",
 
     "@bridge_link": "#fea",
     "@bridge_major_rail": "#bbb",
@@ -85,10 +85,10 @@
     "@tunnel_street": "#fff",
     "@tunnel_trunk_primary": "#fff4c6",
 
-    "@water": "#5f87ff",
+    "@water": "#FFC0CB",
     "@water_label": "#74aee9",
 
-    "@waterway": "#a0c8f0",
+    "@waterway": "#FFC0CB",
     "@waterway_river": "#a0c8f0",
     "@waterway_stream_canal": "#a0c8f0"
   },

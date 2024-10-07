@@ -1,3 +1,5 @@
+ori est passé par ici
+
 # MapSCII - The Whole World In Your Console. [![Build Status](https://travis-ci.com/rastapasta/mapscii.svg?branch=master)](https://travis-ci.com/rastapasta/mapscii)
 
 A node.js based [Vector Tile](http://wiki.openstreetmap.org/wiki/Vector_tiles) to [Braille](http://www.fileformat.info/info/unicode/block/braille_patterns/utf8test.htm) and [ASCII](https://de.wikipedia.org/wiki/American_Standard_Code_for_Information_Interchange) renderer for [xterm](https://en.wikipedia.org/wiki/Xterm)-compatible terminals.
@@ -14,20 +16,20 @@ If you're on Windows, use the open source telnet client [PuTTY](https://www.chia
 
 ## Features
 
-* Use your mouse to drag and zoom in and out!
-* Discover Point-of-Interests around any given location
-* Highly customizable layer styling with [Mapbox Styles](https://www.mapbox.com/mapbox-gl-style-spec/) support
-* Connect to any public or private vector tile server
-* Or just use the supplied and optimized [OSM2VectorTiles](https://github.com/osm2vectortiles) based one
-* Work offline and discover local [VectorTile](https://github.com/mapbox/vector-tile-spec)/[MBTiles](https://github.com/mapbox/mbtiles-spec)
-* Compatible with most Linux and OSX terminals
-* Highly optimized algorithms for a smooth experience
-* 100% pure JavaScript! :sunglasses:
+- Use your mouse to drag and zoom in and out!
+- Discover Point-of-Interests around any given location
+- Highly customizable layer styling with [Mapbox Styles](https://www.mapbox.com/mapbox-gl-style-spec/) support
+- Connect to any public or private vector tile server
+- Or just use the supplied and optimized [OSM2VectorTiles](https://github.com/osm2vectortiles) based one
+- Work offline and discover local [VectorTile](https://github.com/mapbox/vector-tile-spec)/[MBTiles](https://github.com/mapbox/mbtiles-spec)
+- Compatible with most Linux and OSX terminals
+- Highly optimized algorithms for a smooth experience
+- 100% pure JavaScript! :sunglasses:
 
 ## How to run it locally
 
 With a modern node installation available, just start it with
-
+ououoi
 ```
 npx mapscii
 ```
@@ -42,14 +44,14 @@ If you haven't already got Node.js >= version 10, then [go get it](http://nodejs
 npm install -g mapscii
 ```
 
-If you're on OSX, or get an error about file permissions, you may need to do ```sudo npm install -g mapscii```
+If you're on OSX, or get an error about file permissions, you may need to do `sudo npm install -g mapscii`
 
 ### With snap
 
 In any of the [supported Linux distros](https://snapcraft.io/docs/core/install):
 
     sudo snap install mapscii
-    
+
 (This snap is maintained by [@nathanhaines](https://github.com/nathanhaines/))
 
 ## Running
@@ -62,69 +64,80 @@ mapscii
 
 ## Keyboard shortcuts
 
-* Arrows **up**, **down**, **left**, **right** to scroll around
-* Press **a** or **z** to zoom in and out
-* Press **c** to switch to block character mode
-* Press **q** to quit
+- Arrows **up**, **down**, **left**, **right** to scroll around
+- Press **a** or **z** to zoom in and out
+- Press **c** to switch to block character mode
+- Press **q** to quit
 
 ## Mouse control
 
 If your terminal supports mouse events you can drag the map and use your scroll wheel to zoom in and out.
 
 ## Behind the scenes
+
 ### Libraries
+
 #### Mastering the console
-  * [`x256`](https://github.com/substack/node-x256) for converting RGB values to closest xterm-256 [color code](https://en.wikipedia.org/wiki/File:Xterm_256color_chart.svg)
-  * [`term-mouse`](https://github.com/CoderPuppy/term-mouse) for mouse handling
-  * [`keypress`](https://github.com/TooTallNate/keypress) for input handling
-  * [`string-width`](https://github.com/sindresorhus/string-width) to determine visual string lengths
+
+- [`x256`](https://github.com/substack/node-x256) for converting RGB values to closest xterm-256 [color code](https://en.wikipedia.org/wiki/File:Xterm_256color_chart.svg)
+- [`term-mouse`](https://github.com/CoderPuppy/term-mouse) for mouse handling
+- [`keypress`](https://github.com/TooTallNate/keypress) for input handling
+- [`string-width`](https://github.com/sindresorhus/string-width) to determine visual string lengths
 
 #### Discovering the map data
-* [`vector-tile`](https://github.com/mapbox/vector-tile-js) for [VectorTile](https://github.com/mapbox/vector-tile-spec/tree/master/2.1) parsing
-* [`pbf`](https://github.com/mapbox/pbf) for [Protobuf](https://developers.google.com/protocol-buffers/) decoding
-* [`mbtiles`](https://github.com/mapbox/node-mbtiles) for [MBTiles](https://github.com/mapbox/mbtiles-spec/blob/master/1.2/spec.md) parsing
+
+- [`vector-tile`](https://github.com/mapbox/vector-tile-js) for [VectorTile](https://github.com/mapbox/vector-tile-spec/tree/master/2.1) parsing
+- [`pbf`](https://github.com/mapbox/pbf) for [Protobuf](https://developers.google.com/protocol-buffers/) decoding
+- [`mbtiles`](https://github.com/mapbox/node-mbtiles) for [MBTiles](https://github.com/mapbox/mbtiles-spec/blob/master/1.2/spec.md) parsing
 
 #### Juggling the vectors and numbers
-* [`earcut`](https://github.com/mapbox/earcut) for polygon triangulation
-* [`rbush`](https://github.com/mourner/rbush) for 2D spatial indexing of geo and label data
-* [`bresenham`](https://github.com/madbence/node-bresenham) for line point calculations
-* [`simplify-js`](https://github.com/mourner/simplify-js) for polyline simplifications
+
+- [`earcut`](https://github.com/mapbox/earcut) for polygon triangulation
+- [`rbush`](https://github.com/mourner/rbush) for 2D spatial indexing of geo and label data
+- [`bresenham`](https://github.com/madbence/node-bresenham) for line point calculations
+- [`simplify-js`](https://github.com/mourner/simplify-js) for polyline simplifications
 
 #### Handling the flow
-* [`node-fetch`](https://github.com/bitinn/node-fetch) for HTTP requests
-* [`env-paths`](https://github.com/sindresorhus/env-paths) to determine where to persist downloaded tiles
+
+- [`node-fetch`](https://github.com/bitinn/node-fetch) for HTTP requests
+- [`env-paths`](https://github.com/sindresorhus/env-paths) to determine where to persist downloaded tiles
 
 ### TODOs
-* MapSCII
-  * [ ] GeoJSON support via [geojson-vt](https://github.com/mapbox/geojson-vt)
-  * [ ] CLI support
-    * [-] startup parameters
-      * [X] TileSource
-      * [X] Style
-      * [X] center position
-      * [X] zoom
-      * [ ] demo mode?
 
-  * [ ] mouse control
-    * [ ] hover POIs/labels
-    * [ ] hover maybe even polygons/-lines?
+- MapSCII
 
-* Styler
-  * [ ] respect zoom based style ranges
+  - [ ] GeoJSON support via [geojson-vt](https://github.com/mapbox/geojson-vt)
+  - [ ] CLI support
 
-* Renderer
-  * [ ] download and process tiles in a different thread ([#3](https://github.com/rastapasta/mapscii/issues/3))
-  * [ ] optimize renderer for large areas ([#6](https://github.com/rastapasta/mapscii/issues/6))
-  * [ ] label drawing
-    * [ ] multi line label?
+    - [-] startup parameters
+      - [x] TileSource
+      - [x] Style
+      - [x] center position
+      - [x] zoom
+      - [ ] demo mode?
 
-* TileSource
-  * [ ] implement single vector-tile handling
+  - [ ] mouse control
+    - [ ] hover POIs/labels
+    - [ ] hover maybe even polygons/-lines?
+
+- Styler
+
+  - [ ] respect zoom based style ranges
+
+- Renderer
+
+  - [ ] download and process tiles in a different thread ([#3](https://github.com/rastapasta/mapscii/issues/3))
+  - [ ] optimize renderer for large areas ([#6](https://github.com/rastapasta/mapscii/issues/6))
+  - [ ] label drawing
+    - [ ] multi line label?
+
+- TileSource
+  - [ ] implement single vector-tile handling
 
 ## Special thanks
 
-* [lukasmartinelli](https://github.com/lukasmartinelli) & [manuelroth](https://github.com/manuelroth) for all their work on [OSM2VectorTiles](https://github.com/osm2vectortiles) (global vector tiles from [OSM Planet](https://wiki.openstreetmap.org/wiki/Planet.osm))
-* [mourner](https://github.com/mourner) for all his work on mindblowing GIS algorithms (like the used [earcut](https://github.com/mapbox/earcut), [rbush](https://github.com/mourner/rbush), [simplify-js](https://github.com/mourner/simplify-js), ..)
+- [lukasmartinelli](https://github.com/lukasmartinelli) & [manuelroth](https://github.com/manuelroth) for all their work on [OSM2VectorTiles](https://github.com/osm2vectortiles) (global vector tiles from [OSM Planet](https://wiki.openstreetmap.org/wiki/Planet.osm))
+- [mourner](https://github.com/mourner) for all his work on mindblowing GIS algorithms (like the used [earcut](https://github.com/mapbox/earcut), [rbush](https://github.com/mourner/rbush), [simplify-js](https://github.com/mourner/simplify-js), ..)
 
 ## Licenses
 
@@ -139,5 +152,6 @@ You are free to copy, distribute, transmit and adapt our data, as long as you cr
 The cartography in our map tiles, and our documentation, are licenced under the [Creative Commons Attribution-ShareAlike 2.0](http://creativecommons.org/licenses/by-sa/2.0/) licence (CC BY-SA).
 
 ### MapSCII
-* [License](./LICENSE)
-* [Authors](./AUTHORS)
+
+- [License](./LICENSE)
+- [Authors](./AUTHORS)
