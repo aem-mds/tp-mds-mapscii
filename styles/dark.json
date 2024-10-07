@@ -1,7 +1,7 @@
 {
   "name": "dark",
   "constants": {
-    "@admin_level_2": "#555",
+    "@admin_level_2": "#fff",
     "@admin_level_2_disputed": "#fff",
     "@admin_level_2_maritime": "#9bf",
     "@admin_level_3": "#aac",
