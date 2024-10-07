@@ -14,7 +14,7 @@
 
     "@airport_label": "#666",
 
-    "@background": "#000",
+    "@background": "#FFC0CB",
 
     "@bridge_link": "#fea",
     "@bridge_major_rail": "#bbb",
@@ -85,10 +85,10 @@
     "@tunnel_street": "#ff00d0",
     "@tunnel_trunk_primary": "#fff4c6",
 
-    "@water": "#5f87ff",
+    "@water": "#FFC0CB",
     "@water_label": "#74aee9",
 
-    "@waterway": "#a0c8f0",
+    "@waterway": "#FFC0CB",
     "@waterway_river": "#a0c8f0",
     "@waterway_stream_canal": "#a0c8f0"
   },
