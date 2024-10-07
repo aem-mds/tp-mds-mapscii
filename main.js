@@ -8,7 +8,6 @@
   TODO: params parsing and so on
 #*/
 'use strict';
-const config = require('./src/config');
 const Mapscii = require('./src/Mapscii');
 const argv = require('yargs')
   .option('latitude', {
