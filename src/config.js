@@ -10,7 +10,7 @@ module.exports = {
   styleFile: __dirname+'/../styles/dark.json',
 
   initialZoom: null,
-  maxZoom: 30,
+  maxZoom: 18,
   zoomStep: 0.2,
 
   // sf lat: 37.787946, lon: -122.407522
