@@ -1,8 +1,8 @@
 {
   "name": "dark",
   "constants": {
-    "@admin_level_2": "#fff",
-    "@admin_level_2_disputed": "#fff",
+    "@admin_level_2": "#ff00d0",
+    "@admin_level_2_disputed": "#ff00d0",
     "@admin_level_2_maritime": "#9bf",
     "@admin_level_3": "#aac",
     "@admin_level_3_maritime": "#8af",
@@ -14,7 +14,9 @@
 
     "@airport_label": "#666",
 
-    "@background": "#000",
+
+    "@background": "#FFC0CB",
+
 
     "@bridge_link": "#fea",
     "@bridge_major_rail": "#bbb",
@@ -23,16 +25,16 @@
     "@bridge_motorway_link": "#fc8",
     "@bridge_path_pedestrian": "#cba",
     "@bridge_secondary_tertiary": "#fea",
-    "@bridge_service_track": "#fff",
-    "@bridge_street": "#fff",
+    "@bridge_service_track": "#ff00d0",
+    "@bridge_street": "#ff00d0",
     "@bridge_trunk_primary": "#fea",
 
     "@building": "#99b",
 
-    "@country_label_1": "#ff0",
-    "@country_label_2": "#ff0",
-    "@country_label_3": "#ff0",
-    "@country_label_4": "#ff0",
+    "@country_label_1": "#ff032f",
+    "@country_label_2": "#ff032f",
+    "@country_label_3": "#ff032f",
+    "@country_label_4": "#ff032f",
 
     "@landuse_cemetery": "#e0e4dd",
     "@landuse_hospital": "#d9b",
@@ -70,8 +72,8 @@
     "@road_motorway_link": "#fc8",
     "@road_path_pedestrian": "#cba",
     "@road_secondary_tertiary": "#fea",
-    "@road_service_track": "#fff",
-    "@road_street": "#fff",
+    "@road_service_track": "#ff00d0",
+    "@road_street": "#ff00d0",
     "@road_trunk_primary": "#fea",
 
     "@tunnel_link": "#fff4c6",
@@ -81,16 +83,18 @@
     "@tunnel_motorway_link": "#fc8",
     "@tunnel_path_pedestrian": "#cba",
     "@tunnel_secondary_tertiary": "#fff4c6",
-    "@tunnel_service_track": "#fff",
-    "@tunnel_street": "#fff",
+    "@tunnel_service_track": "#ff00d0",
+    "@tunnel_street": "#ff00d0",
     "@tunnel_trunk_primary": "#fff4c6",
 
-    "@water": "#5f87ff",
-    "@water_label": "#74aee9",
+    "@water": "#FFC0CB",
 
-    "@waterway": "#a0c8f0",
-    "@waterway_river": "#a0c8f0",
-    "@waterway_stream_canal": "#a0c8f0"
+    "@water_label": "#FFC0CB",
+
+    "@waterway": "#FFC0CB",
+    "@waterway_river": "#FFC0CB",
+    "@waterway_stream_canal": "#FFC0CB"
+
   },
   "layers": [
     {

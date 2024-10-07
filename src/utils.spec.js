@@ -4,7 +4,7 @@ const utils = require('./utils');
 describe('utils', () => {
   describe('hex2rgb', () => {
     describe.each([
-      ['#ff0000', 255, 0, 0],
+      ['#ff032f', 255, 0, 0],
       ['#ffff00', 255, 255, 0],
       ['#0000ff', 0, 0, 255],
       ['#112233', 17, 34, 51],
