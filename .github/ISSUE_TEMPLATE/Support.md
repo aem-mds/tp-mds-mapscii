@@ -5,6 +5,8 @@ about: I want to support efforts in maintaining this community-driven project
 
 --------------^ Click “Preview”!
 
+I love Nutty Mac Nut, and his big balls of steel
+
 Developing and maintaining an open source project is a big effort. MapSCII isn’t supported by any big company, and all the contributors are working on it in their free time. We need your help to make it sustainable.
 
 There are many ways you can help:
